@@ -46,8 +46,8 @@ def login_with_username_and_password(browser, username, password):
     if(len(confirm_button)>0):
         confirm_button[1].click()
 
-        
-#Step #4: Enter a search term
+
+# Step #4: Enter a search term
 def enter_search_term(browser,search_term):
     # Enter text on the search term
     search_input = browser.find_element_by_id("search")
@@ -58,4 +58,10 @@ def enter_search_term(browser,search_term):
 
     search_input.send_keys(Keys.ENTER)
 
+
+# Step #5: Click on a video
+thumbnails = browser.find_elements_by_css_selector("ytd-video-renderer")
+
+    for index in range(1,6):
+        thumbnails[index].click()
 
