@@ -33,7 +33,7 @@ You can install selenium executing the following command from your terminal:
             
 To use selenium you also need a driver, which is basically a browser. You could just use your already installed browser or download a driver. I would recommend downloading a driver to avoid messing up your browser settings. You can download a driver following the link below:
 
-Chrome: https://sites.google.com/a/chromium.org/chromedriver/downloads
+Chrome: [https://sites.google.com/a/chromium.org/chromedriver/downloads](https://sites.google.com/chromium.org/driver/)
 
 Edge: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
 
