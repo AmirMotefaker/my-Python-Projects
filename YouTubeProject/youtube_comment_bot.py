@@ -65,3 +65,28 @@ thumbnails = browser.find_elements_by_css_selector("ytd-video-renderer")
     for index in range(1,6):
         thumbnails[index].click()
 
+
+# Step #6: Enter a comment
+from selenium.webdriver.common.action_chains import ActionChains
+
+def enter_comment(browser, comment):
+    comment_input = browser.find_element_by_css_selector("ytd-comment-simplebox-renderer")
+
+    entering_comment_actions = ActionChains(browser)
+
+    entering_comment_actions.move_to_element(comment_input)
+    entering_comment_actions.click()
+
+    for letter in comment:
+        entering_comment_actions.send_keys(letter)
+        wait_time = random.randint(0,1000)/1000
+        entering_comment_actions.pause(wait_time)
+
+    entering_comment_actions.perform()
+
+    time.sleep(1)
+
+    send_comment_button = browser.find_element_by_id("submit-button")
+    send_comment_button.click()
+
+
