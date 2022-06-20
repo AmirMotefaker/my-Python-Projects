@@ -76,4 +76,10 @@ Step #4: Enter a search term
 
 In this step, we define how to enter a search term into the search box. To do so, we will create a function passing in the browser and the search term.
     
+    
+Step #5: Click on a video
+
+Therefore all we need to do at this point is selecting one of the videos and click. We could select one random video, or alternately select the first one, and follow the list order.
+
+
 
