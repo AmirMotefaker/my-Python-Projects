@@ -102,4 +102,8 @@ So far our bot has opened a video and enter a comment. We will need to go back t
      browser.execute_script("window.history.go(-1)")
      
      
+Step #8: Put it all together
+
+At this point, we have some code in our bot script containing functions that will log in to youtube, enter a search term in the search box and enter a comment. The last step is connecting all the pieces.
+
 
