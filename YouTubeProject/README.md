@@ -82,4 +82,17 @@ Step #5: Click on a video
 Therefore all we need to do at this point is selecting one of the videos and click. We could select one random video, or alternately select the first one, and follow the list order.
 
 
+Step #6: Enter a comment
+
+Once our browser opens the video page, we can insert our comment. To enter a comment, we need to do the following:
+
+    Move to the comment input field
+
+    Click on the component, so it gets the focus.
+
+    Type our comment
+
+    Press the “Comment” button
+    
+
 
