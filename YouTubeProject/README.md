@@ -40,4 +40,21 @@ Edge: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
 Firefox: https://github.com/mozilla/geckodriver/releases
 
 
+Step #2: Open Youtube site
+
+The first step is opening the youtube site:
+
+    [www.youtube.com.](https://www.youtube.com/)
+
+To open youtube with your bot, you will need to create a new python script and add the following code:
+
+    from selenium import webdriver
+
+    browser = webdriver.Chrome('./chromedriver')
+
+    browser.get("https://www.youtube.com")
+    
+ **Note: Please note that your python script and the chrome driver file should be in the same folder.**
+
+
 
