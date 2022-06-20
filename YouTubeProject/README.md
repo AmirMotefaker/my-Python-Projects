@@ -94,5 +94,12 @@ Once our browser opens the video page, we can insert our comment. To enter a com
 
     Press the “Comment” button
     
+    
+Step #7: Go back
 
+So far our bot has opened a video and enter a comment. We will need to go back to the video list and click on the next video. We can achieve that easily press the back button in the browser. In Selenium, we can go back to the previous page using the following code:
+
+     browser.execute_script("window.history.go(-1)")
+     
+     
 
