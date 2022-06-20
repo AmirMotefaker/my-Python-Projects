@@ -57,4 +57,23 @@ To open youtube with your bot, you will need to create a new python script and a
  **Note: Please note that your python script and the chrome driver file should be in the same folder.**
 
 
+Step #3: Login with a username and password
+
+signing in to Youtube. Signing in consists of five simple tasks:
+
+    Typing your email
+
+    Clicking next
+
+    Typing the password
+
+    Click next
+
+    Sometimes clicking on confirm, although this step is not always needed.
+    
+    
+Step #4: Enter a search term
+
+In this step, we define how to enter a search term into the search box. To do so, we will create a function passing in the browser and the search term.
+    
 
