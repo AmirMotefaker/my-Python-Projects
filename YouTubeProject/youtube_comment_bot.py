@@ -4,10 +4,7 @@
 
 # Step #2: Open Youtube site
 from selenium import webdriver
-
-browser = webdriver.Chrome('./chromedriver')
-browser.get("https://www.youtube.com")
-
+from selenium.webdriver.common.action_chains import ActionChains
 
 # Step #3: Login with a username and password
 def login_with_username_and_password(browser, username, password):
@@ -61,14 +58,11 @@ def enter_search_term(browser,search_term):
 
 # Step #5: Click on a video
 thumbnails = browser.find_elements_by_css_selector("ytd-video-renderer")
-
     for index in range(1,6):
         thumbnails[index].click()
 
 
 # Step #6: Enter a comment
-from selenium.webdriver.common.action_chains import ActionChains
-
 def enter_comment(browser, comment):
     comment_input = browser.find_element_by_css_selector("ytd-comment-simplebox-renderer")
 
@@ -90,3 +84,43 @@ def enter_comment(browser, comment):
     send_comment_button.click()
 
 
+browser = webdriver.Chrome('./chromedriver')
+browser.get("https://www.youtube.com")
+
+# Click Agree and Sing In
+click_on_agree_and_signin(browser)
+
+# Sign In
+login_with_username_and_password(browser, "your_username_here", "your_password_here")
+
+all_search_terms =['make money online','online marketing']
+for search_term in all_search_terms:
+    enter_search_term(browser, search_term)
+    time.sleep(2)
+
+    thumbnails = browser.find_elements_by_css_selector("ytd-video-renderer")
+
+    for index in range(1,6):
+        thumbnails[index].click()
+        time.sleep(6)
+
+        enter_comment(browser,"your comment here")
+        browser.execute_script("window.history.go(-1)")
+        thumbnails = browser.find_elements_by_css_selector("ytd-video-renderer")
+
+
+time.sleep(1)
+browser.close()
+
+def click_on_agree_and_signin(browser):
+    agree_button= browser.find_element_by_css_selector('button')
+    time.sleep(2)
+    agree_button.click()
+
+    signin_buttons= browser.find_elements_by_css_selector('yt-button-renderer')
+    time.sleep(6) # Wait longer so the message pops up
+    while(len(signin_buttons)== 0):
+        signin_buttons= browser.find_elements_by_css_selector('yt-button-renderer')
+        time.sleep(1)
+
+    signin_buttons[1].click()
