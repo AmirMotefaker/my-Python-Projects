@@ -3,23 +3,6 @@
 # Tic-Tac-Toe Game (advanced)
 
 
-# Step-by-Step
-# 1- Tic-tac-toe Design
-# 2- Store information using data structures
-# 3- Game Loop
-# 4- Handle player input
-# 5- Update information
-# 6- Check win or draw
-# 7- Switch the current player
-# 8- Enter player names
-# 9- Store game-related information
-# 10- Design scoreboard
-# 11- Outer Game Loop
-# 12- Handle and Assign Player Choice
-# 13- Execute the match
-# 14- Update the scoreboard
-# 15- Switch the choosing player
-
 # Function to print Tic Tac Toe
 def print_tic_tac_toe(values):
     print("\n")
