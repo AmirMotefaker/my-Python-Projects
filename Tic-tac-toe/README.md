@@ -79,17 +79,20 @@
 
 
 
+# Tic-Tac-Toe (Advanced Plus)
 
 # Prerequisites
 
     pip install pygame
-   
-# 1. Initializing game components
+ 
+# Step-by-Step
+ 
+1. Initializing game components
 
-# 2. Initializing Pygame window
+2. Initializing Pygame window
 
-# 3. Load and transform images
+3. Load and transform images
 
-# 4. Define the functions
+4. Define the functions
 
-# 5. Run the tic tac toe game forever
+5. Run the tic tac toe game forever
