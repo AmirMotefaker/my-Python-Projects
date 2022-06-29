@@ -11,6 +11,7 @@ settings = {
     'length': 8
 }
 
+
 def get_yes_or_no_for_settings(option, default):
     while True:
         user_input = input(f'Include {option}? (Defualt is {default}) (y: yes, n:no, enter: default): ' )
@@ -29,7 +30,8 @@ def get_settings_from_user(settings):
     for option, default in settings.items():
         if option != 'length':
             user_choice = get_yes_or_no_for_settings(option, default)
-            print(user_choice)
+            settings[option] = user_choice
            
 
 get_settings_from_user(settings)
+print(settings)
