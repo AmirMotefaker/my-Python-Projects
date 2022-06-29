@@ -1,6 +1,6 @@
 # Password Generator
 
-# Password Generator - CodingYar
+## Password Generator - CodingYar
 
 >> User settings:
 
@@ -31,7 +31,7 @@
 
 
 
-# Password Generator - 2
+## Password Generator - 2
 
 >> Sep-by-Step
 
