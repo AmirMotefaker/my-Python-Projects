@@ -109,11 +109,26 @@ def password_generator(settings):
     return final_password
 
 
+def password_generator_loop(settings):
+    while True:
+        print('-'*20)
+        print(f'Generated Password: {password_generator(settings)}')
+   
+        while True:
+            want_another_password = input('Do you want another password? (y: yes, n: no, enter: yes): ')
+            if want_another_password in ['y', 'n','']:
+                if want_another_password == 'n':
+                    return
+                break
+            else:
+                print('Invalid input. (Choose from y: yes, n: no, enter: yes).')
+                print('Please try again.')
+
+
 def run():
     clear_screen()
     get_settings_from_user(settings)
-    print('-'*20)
-    print(f'Generated Password: {password_generator(settings)}')
-
+    password_generator_loop(settings)
+  
 
 run()
