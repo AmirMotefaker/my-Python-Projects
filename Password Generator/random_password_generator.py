@@ -15,12 +15,15 @@ settings = {
     'length': 8,
 }
 
+PASSWORD_MIN_LENGTH = 4
+PASSWORD_MAX_LENGTH = 30
+
 
 def clear_screen():
     os.system('cls')
 
 
-def get_user_password_length(option, default, pw_min_length=4, pw_max_length=30):
+def get_user_password_length(option, default, pw_min_length=PASSWORD_MIN_LENGTH, pw_max_length=PASSWORD_MAX_LENGTH):
     while True:
         user_input = input('Enter password length. '
                           f'(Defualt is {default}) (enter: default): ')
@@ -109,7 +112,8 @@ def password_generator(settings):
 def run():
     clear_screen()
     get_settings_from_user(settings)
-    print(password_generator(settings))
+    print('-'*20)
+    print(f'Generated Password: {password_generator(settings)}')
 
 
 run()
