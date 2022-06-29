@@ -23,7 +23,8 @@ def clear_screen():
     os.system('cls')
 
 
-def get_user_password_length(option, default, pw_min_length=PASSWORD_MIN_LENGTH, pw_max_length=PASSWORD_MAX_LENGTH):
+def get_user_password_length(option, default, pw_min_length=PASSWORD_MIN_LENGTH,
+                             pw_max_length=PASSWORD_MAX_LENGTH):
     while True:
         user_input = input('Enter password length. '
                           f'(Defualt is {default}) (enter: default): ')
@@ -72,7 +73,8 @@ def get_settings_from_user(settings):
 
 def ask_if_change_settings(settings):
     while True:
-        user_answer = input('Do you want to change default settings? (y: yes, n: no, enter: yes): ')
+        user_answer = input('Do you want to change default settings? '
+                            '(y: yes, n: no, enter: yes): ')
 
         if user_answer in ['y', 'n','']:
             if user_answer in ['y','']:
