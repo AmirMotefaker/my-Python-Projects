@@ -1,6 +1,30 @@
 # Password Generator
 
-# Sep-by-Step
+# Password Generator - CodingYar
+
+>> User settings:
+
+     Password length: 6
+
+     Existence of uppercase characters: Yes
+
+     Existence of lower case characters: Yes
+
+     Existence of symbols: Yes
+
+     Existence of numbers: Yes
+
+     Existence of empty space: No
+
+
+
+
+
+
+
+# Password Generator - 2
+
+>> Sep-by-Step
 
  1- Store all the characters as a list. We can use the string module of Python or type all of them.
  
