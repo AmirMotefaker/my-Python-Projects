@@ -11,23 +11,26 @@ settings = {
     'length': 8
 }
 
+def get_yes_or_no_for_settings(option, default):
+    while True:
+        user_input = input(f'Include {option}? (Defualt is {default}) (y: yes, n:no): ' )
+
+        if user_input == 'y' or user_input == 'n':
+            if user_input == 'y':
+                return True
+            else:
+                return False
+        else:
+            print('Invalid input. Please try again.')
+
+
+
 def get_settings_from_user(settings):
     
     for option, default in settings.items():
         if option != 'length':
-            while True:
-                user_input = input(f'Include {option}? (Defualt is {default}) (y: yes, n:no): ' )
-
-                if user_input == 'y' or user_input == 'n':
-                    if user_input == 'y':
-                        settings[option] = True
-                    else:
-                        settings[option] = False
-
-                    break
-                else:
-                    print('Invalid input. Please try again.')
-
+            get_yes_or_no_for_settings(option, default)
+           
 
 get_settings_from_user(settings)
 
