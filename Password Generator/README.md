@@ -1,6 +1,6 @@
 # Password Generator
 
-## Password Generator - CodingYar
+## Random Password Generator
 
 >> User settings:
 
