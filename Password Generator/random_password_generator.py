@@ -4,6 +4,7 @@
 
 import random
 import string
+import os
 
 settings = {
     'lower': True,
@@ -11,8 +12,12 @@ settings = {
     'symbol': True,
     'number': True,
     'space': False,
-    'length': 8
+    'length': 8,
 }
+
+
+def clear_screen():
+    os.system('cls')
 
 
 def get_user_password_length(option, default, pw_min_length=4, pw_max_length=30):
@@ -101,5 +106,10 @@ def password_generator(settings):
     return final_password
 
 
-get_settings_from_user(settings)
-print(password_generator(settings))
+def run():
+    clear_screen()
+    get_settings_from_user(settings)
+    print(password_generator(settings))
+
+
+run()
