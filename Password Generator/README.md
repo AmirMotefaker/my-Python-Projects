@@ -6,7 +6,7 @@
 
      Password length: 6
 
-     Existence of uppercase characters: Yes
+     Existence of upper case characters: Yes
 
      Existence of lower case characters: Yes
 
