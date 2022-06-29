@@ -63,11 +63,7 @@ def password_generator(settings):
     final_password = ''
     password_length = settings['length']
 
-    choices = []
-    for key, value in settings.items():
-        if value == True:
-            choices.append(key)
-    
+    choices = list(filter(lambda x: settings[x], ['lower', 'upper', 'symbol','number', 'space']))
     for i in range(password_length):
         final_password += 'a'
 
