@@ -16,6 +16,15 @@
 
      Existence of empty space: No
 
+> Program implementation process:
+
+     1- Ask the user about the settings they want to apply
+     
+     2- The user changes the settings if desired
+     
+     3- We will create and display the password according to the said settings for him.
+     
+     4- If the user wants, we will create another password with the same settings.
 
 
 
