@@ -2,6 +2,9 @@
 
 # Random Password Generator
 
+import random
+import string
+
 settings = {
     'lower': True,
     'upper': True,
@@ -59,13 +62,41 @@ def get_settings_from_user(settings):
             settings[option] = user_password_length
 
 
+def get_random_upper_case():
+    return random.choice(string.ascii_uppercase)
+
+def get_random_lower_case():
+    return random.choice(string.ascii_lowercase)
+    
+def get_random_number():
+    return random.choice('0123456789')
+
+def get_random_symbol():
+    return random.choice("""~`!@#$%^&*()_+-=|\}]{["':;?/>.<,""")
+
+
+def generate_random_char(choices):
+    choice = random.choice(choices)
+
+    if choice == 'upper':
+        return get_random_upper_case()
+    if choice == 'lower': 
+        return get_random_lower_case()
+    if choice == 'symbol':
+        return get_random_symbol()
+    if choice == 'number':
+        return get_random_number()
+    if choice == 'space':
+        return ' '
+ 
+
 def password_generator(settings):
     final_password = ''
     password_length = settings['length']
 
     choices = list(filter(lambda x: settings[x], ['lower', 'upper', 'symbol','number', 'space']))
     for i in range(password_length):
-        final_password += 'a'
+        final_password += generate_random_char(choices)
 
     return final_password
 
