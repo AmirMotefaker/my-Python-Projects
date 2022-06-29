@@ -6,13 +6,13 @@
 
      Password length: 6
 
-     Existence of upper case characters: Yes
+     Existence of upper case characters: Yes  (example: A,X,Z,...)
 
-     Existence of lower case characters: Yes
+     Existence of lower case characters: Yes   (example: a,x,z,...)
 
-     Existence of symbols: Yes
+     Existence of symbols: Yes   (example: %,&,*,...)
 
-     Existence of numbers: Yes
+     Existence of numbers: Yes   (example: 3,9,1,...)
 
      Existence of empty space: No
 
