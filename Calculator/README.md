@@ -1,7 +1,26 @@
 # Calculator
 
-## Simple Calculator
+## Scientific Calculator
 
+>> Step-by-Step:
+
+     1- Import module
+     
+     2- Layout for the GUI of the calculator by using Tkinter
+     
+     3- Create a class in which we will create all the functions of the scientific calculator
+     
+     4- Create a display in the GUI of the calculator by passing the font style, font size, background color,...
+     
+     5- Create a number pad for the calculator
+     
+     6- Place all the buttons/operators in their respective position in the grid
+     
+     7- Create a menubar of the calculator GUI
+     
+     
+     
+## Simple Calculator
 
 >> Step-by-Step:
 
@@ -28,9 +47,6 @@
                     # This is the main part of this program. 
                     
                     # This is used for the calculation.
-
-
-
 
 
 
