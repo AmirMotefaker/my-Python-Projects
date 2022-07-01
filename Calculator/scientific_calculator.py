@@ -1,5 +1,4 @@
 # Code by @AmirMotefaker
-# With the help of adityatri @geeksforgeeks
 
 # Scientific Calculator
 
