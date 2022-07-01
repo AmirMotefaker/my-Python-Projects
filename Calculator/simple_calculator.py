@@ -2,7 +2,6 @@
 
 # Simple Calculator
 
-# Install Tkinter: pip install tk
 from tkinter import *
 
 class Calculator:
