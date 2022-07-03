@@ -2,12 +2,6 @@
 
 # Memory Puzzle Game
 
-
-# 1. Installing Tkinter
-#     pip install tkinter
-
-
-# 2. Importing Modules and initializing tkinter window
 from tkinter import *
 import random
 from tkinter import ttk
@@ -20,7 +14,6 @@ tabs = ttk.Notebook(PuzzleWindow)
 easy= ttk.Frame(tabs)
 
 
-# 3. Various functions required for creating easy level
 def draw(a,l,m):
     global base1
     if a=='A':
@@ -101,7 +94,6 @@ board1=[list('.'*4) for count in range(4)]
 quizboard()
 
 
-# 4. Various function required for creating medium level
 window2= ttk.Frame(tabs)
  
 def draw1(a,l,m):
@@ -199,7 +191,6 @@ board2=[list('.'*6) for count in range(6)]
 puzzleboard2()
 
 
-# 5. Various function required for creating hard level
 window3= ttk.Frame(tabs)
 tabs.add(easy, text ='Easy') 
 tabs.add(window2, text ='medium') 
