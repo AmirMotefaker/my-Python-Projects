@@ -1,4 +1,6 @@
-# Prerequisites:
+# Countdown Timer
+
+## Prerequisites:
 
     sudo apt-get install python3-tkinter
     
