@@ -1,8 +1,10 @@
+# 2048 game
+
 >> Explanation:
 
  We have defined two classes in the code:
 
-# 1. Board:
+## 1. Board:
 
   Variables:
 
@@ -42,7 +44,7 @@
     
 
 
-# 2. Game:
+## 2. Game:
 
  This class doesn’t have many variables, it only has some Boolean variables indicating game status.
 
