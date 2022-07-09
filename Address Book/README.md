@@ -6,10 +6,10 @@
     
 ## Step by Step:
 
-  1. Importing module
+>  1. Importing module
   
 
-  2. Initializing window:
+>  2. Initializing window:
 
       Tk() use to initialized tkinter
       
@@ -28,7 +28,7 @@
       Here Scrollbar widget and Listbox widget is used to allow users to select from many options
       
       
-  3. Define functions:
+>  3. Define functions:
 
       Selected() function used to return selected value
       
@@ -47,7 +47,7 @@
       Select_set() will sort the manage the contactlist and also used in other functions
       
       
- 4. Define buttons and labels:
+>  4. Define buttons and labels:
  
       Label() widget used when we want to display text
       
