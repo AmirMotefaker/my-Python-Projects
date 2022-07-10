@@ -1,6 +1,6 @@
 # Code by amotef@gmail.com
 
-# Snake Game
+# Snake Game - BASIC
 
 # Installing Pygame
 # Create the Screen
