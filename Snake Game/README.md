@@ -40,31 +40,40 @@
          
                 creating font object my_font
                 
+                creating a text surface on which text - will be drawn
                 
+                create a rectangular object for the text - surface object
                 
+                setting position of the text
+                
+                blit will draw the text on screen
+                
+                after 2 seconds we will quit the program
+                
+                deactivating pygame library
+                
+          Main Function:
+          
+                handling key events
+                
+                If two keys pressed simultaneously we don't want snake to move into two directions simultaneously
+                
+                Moving the snake
+                
+                Snake body growing mechanism if fruits and snakes collide then scores will be incremented by 10
+                
+           Game Over conditions
+           
+           Touching the snake body           
+           
+           displaying score countinuously
+           
+           Refresh game screen
+           
+           Frame Per Second /Refresh Rate
+       
         
-        
-        
-        
-        
-
-        Create the Screen
-
-        Create the Snake
-
-        Moving the Snake
-
-        Game Over when Snake hits the boundaries
-
-        Adding the Food
-
-        Increasing the Length of the Snake
-
-        Displaying the Score
-
-
-
-
+       
 ## Snake Game  - Basic
 
 >> Step by Step
