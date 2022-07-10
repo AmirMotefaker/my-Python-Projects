@@ -2,15 +2,6 @@
 
 # Snake Game - BASIC
 
-# Installing Pygame
-# Create the Screen
-# Create the Snake
-# Moving the Snake
-# Game Over when Snake hits the boundaries
-# Adding the Food
-# Increasing the Length of the Snake
-# Displaying the Score
-
 import pygame
 import time
 import random
