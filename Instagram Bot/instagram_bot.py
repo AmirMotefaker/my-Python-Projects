@@ -51,7 +51,7 @@ def navigate_to_sender():
        if find_user.text == username:
            find_user.click()
             
- def send_jokes(time_between_jokes):
+def send_jokes(time_between_jokes):
    #Find the text area in the chat to send message   message_entry=browser.find_element_by_css_selector('html.js.logged-in.client-root.js-focus-visible.sDN5V body div#react-root section._9eogI.DT7qQ div.t30g8.L1C6I div.Igw0E.IwRSH.eGOV_._4EzTm div.oYYFH div.pV7Qt._6Rvw2.Igw0E.IwRSH.YBx95.ybXk5._4EzTm.i0EQd div.DPiy6.Igw0E.IwRSH.eGOV_.vwCYk div.uueGX div.JiVIq._0NM_B div.Igw0E.IwRSH.eGOV_._4EzTm div.Igw0E.IwRSH.eGOV_._4EzTm.L-sTb.HcJZg div.X3a-9 div.Igw0E.IwRSH.eGOV_.vwCYk.ItkAi textarea')
    while True:
        #Call jokes function to get a random joke
