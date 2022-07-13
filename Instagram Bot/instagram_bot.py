@@ -1,4 +1,4 @@
-# Code by @AmirMotefker
+# Code by @AmirMotefaker
 
 # Instagram Bot
 
