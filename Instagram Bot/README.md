@@ -16,6 +16,23 @@
             
             
             
+##   2. Declaring the necessary functions to automate Instagram messages using Python:
+
+            def jokes(): Declaration of the function for jokes
+            
+            result = requests.get(‘https://bestlifeonline.com/one-liner-jokes/’): Connect to the website for jokes and check the status code. If the status code is 200                  or similar, then we can parse through the HTML outline of the webpage. Find another webpage if status code is 403 which means forbidden.
+            
+            soup = BeautifulSoup(result.content, ‘html.parser’): To scrape data, we must be able to parse through the HTML outline of the webpage. We do that using                      beautiful soup. The first parameter is the content of the web page which contains html tags as well as textual information displayed to the user and                    the second parameter indicates the type of parsing that has to be done.
+            
+            joke_number: Select a random integer within a given range (starting and ending value included) using the function randint.
+            
+            joke = soup.ol.find_all(“li”) [joke_number]: Extract the list item-li under ordered list tag-ol, using find_all. This obtain the needed joke by indexing                    it.
+            
+            eturn joke.text: The joke obtained will contain tags as well. Thus we return only the textual part by giving joke.text
+            
+
+            
+            
             
 
 
