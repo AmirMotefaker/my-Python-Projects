@@ -83,9 +83,17 @@
             time.sleep(time_between_jokes): Waits until the time expires by pausing the process i.e., sleeping and then repeating execution since it is in a loop.
             
             
-
             
+##   3. Initialising the browser and calling functions:
+            time_between_jokes: Get time delay from user using input() and convert it to int using int()
             
+            username: User will input username here. Make sure to give the username as registered by your friends.
             
-
-
+            browser = webdriver.Firefox(): Since the process happens in a controlled browser, we assign it using either a firefox browser or a chrome browser. For the                  Chrome browser, we use the word Chrome instead of firefox. Executable path contains the path to the location of the executable file. Check for                          compatibility of browser and .exe file version. For firefox, install geckodriver.
+            
+            browser.get(‘https://instagram.com/’): Open the URL in the initialized browser using get() function.
+            
+            browser.implicitly_wait(5): Before calling the functions, the browser must load with the website. So we give a delay using implicitly_wait(). This is                        analogous to time.sleep()
+            
+            login_to_instagram(), skip_buttons(), navigate_to_sender(), send_jokes(time_between_jokes): Call functions in the order of the webpages.
+                      
