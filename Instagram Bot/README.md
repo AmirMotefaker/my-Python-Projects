@@ -62,6 +62,27 @@
             f find_user.text == username: Since we chat with many people at different times, what remains as the first chat may not always be the first chat. Hence we                  compare if the text present in the div tag is the same as the username provided by the user.
             
             
+            def send_jokes(time_between_jokes): To send the jokes to the user, we use this function with the parameter being the time delay between messages (jokes).
+            
+            message_entry: Locate the text area using find_element_by_css_selector. There are many alternate ways to locate a tag, details of which are given in the                    documentation.
+            
+            while True: Setting the loop to infinity causes it to send the message without a break. If you wish to terminate the process, you can raise a keyboard                      interrupt in the terminal.
+            
+            joke = jokes(): Calling jokes() function to obtain a joke.
+            
+            message_entry.send_keys(): Similar to username and password input, where send_keys places the required details in the text area. Time.ctime gives the                        current date, day and time with seconds. This part is optional.
+            
+            for i in range(length): Since all the usernames are found in the div tag starting from 1 upto to total number of elements.
+            
+            find_user =…….div[{}]: Insertion of the div component using format operator.
+            
+            if find_user.text == username: Since we chat with many people at different times, what remains as the first chat may not always be the first chat. Hence we                  compare if the text present in the div tag is the same as the username provided by the user.
+            
+            browser.find_element_by_xpath(): Find the send button and send the message by giving the option click()
+            
+            time.sleep(time_between_jokes): Waits until the time expires by pausing the process i.e., sleeping and then repeating execution since it is in a loop.
+            
+            
 
             
             
