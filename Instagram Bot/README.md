@@ -41,6 +41,27 @@
             browser.find_element_by_xpath(“//button[@type=’submit’]”).click(): To submit the credentials and login to instagram, we find the login button. Xpath is the                  path starting from the HTML tag upto the element. // is similar to relative path. Thus we find the button that has the type submit and click on it to                  login.
             
             
+            def skip_buttons(): Some options will be present asking to ‘save The Password’ and to ‘Turn On Notifications’. We deal with those options here by selecting                  ‘Not Now’ for them all. Thus declare the function skip_buttons.
+            
+            browser.find_element_by_xpath(“//div[@class=’cmbtv’]/button[@type=’button’]”).click(): When the screen goes to the second page, you select the option ‘Not                  now’ by giving this command. @class denotes the name of the class and @type denotes the type of the button or any HTML tag.
+                 The same concept is extended to the Notifications option in the third page.
+                 
+                 
+            def navigate_to_sender(): To find the chat option and the text area for that chat, we declare this function.
+         
+            browser.find_element_by_css_selector().click(): It is the same as finding by Xpath, only that it uses a CSS path.
+            
+            browser.find_elements_by_xpath: This function is similar to find element with the difference being the data it returns. This function returns a list of all                  elements containing the same tag. Here we use it to return a list of all the conversations with other users.
+            
+            length = len(elements): To determine the conversations between the user and their friends.
+            
+            for i in range(length): Since all the usernames are found in the div tag starting from 1 upto to total number of elements.
+            
+            find_user =…….div[{}]: Insertion of the div component using format operator.
+            
+            f find_user.text == username: Since we chat with many people at different times, what remains as the first chat may not always be the first chat. Hence we                  compare if the text present in the div tag is the same as the username provided by the user.
+            
+            
 
             
             
