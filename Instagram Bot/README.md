@@ -30,6 +30,17 @@
             
             eturn joke.text: The joke obtained will contain tags as well. Thus we return only the textual part by giving joke.text
             
+            
+            def login_to_instagram(): Declaration of the function for logging in to instagram.
+            
+            Username=browser.find_element_by_name(“username”): This is the name of the input box for username input. Obtain the element containing the given name to                    send the username.
+            
+            Username.send_keys(“put_username_here”): Now that we have the input text area for the username, we can send the username using send_keys.
+                 The same holds for password field
+                 
+            browser.find_element_by_xpath(“//button[@type=’submit’]”).click(): To submit the credentials and login to instagram, we find the login button. Xpath is the                  path starting from the HTML tag upto the element. // is similar to relative path. Thus we find the button that has the type submit and click on it to                  login.
+            
+            
 
             
             
