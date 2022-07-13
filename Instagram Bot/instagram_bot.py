@@ -8,6 +8,7 @@ import random
 import requests
 from bs4 import BeautifulSoup
 
+
 def jokes():
    #Open the website to scrape the jokes from
    result = requests.get('https://bestlifeonline.com/one-liner-jokes/')
@@ -22,7 +23,8 @@ def jokes():
    #print(len(joke))
    #Return only the text ie joke and not the entire tag
    return joke.text
-  
+
+
 def login_to_instagram():
    #Find username
    Username=browser.find_element_by_name("username")
@@ -34,12 +36,14 @@ def login_to_instagram():
    password.send_keys("enter password")
    #Submit button
    browser.find_element_by_xpath("//button[@type='submit']").click()
-  
+ 
+
 def skip_buttons():
    #Not now button for not saving the password   browser.find_element_by_xpath("//div[@class='cmbtv']/button[@type='button']").click()
    #Turn off the notifications button
    browser.find_element_by_xpath("//div[@class='mt3GC']/button[@class='aOOlW   HoLwm ']").click()
-    
+
+   
 def navigate_to_sender():
    #Find the messages button
    browser.find_element_by_css_selector('html.js.logged-in.client-root.js-focus-visible.sDN5V body div#react-root section._9eogI.E3X2T nav.NXc7H.jLuN9 div._8MQSO.Cx7Bp div._lz6s div.MWDvN div.ctQZg div._47KiJ div.XrOey a.xWeGp svg._8-yf5').click()
@@ -50,7 +54,8 @@ def navigate_to_sender():
        find_user = browser.find_element_by_xpath('/html/body/div[1]/section/div/div[2]/div/div/div[1]/div[2]/div/div/div/div/div[{}]/a/div/div[2]/div[1]/div/div/div/div'.format(str(i+1)))
        if find_user.text == username:
            find_user.click()
-            
+   
+   
 def send_jokes(time_between_jokes):
    #Find the text area in the chat to send message   message_entry=browser.find_element_by_css_selector('html.js.logged-in.client-root.js-focus-visible.sDN5V body div#react-root section._9eogI.DT7qQ div.t30g8.L1C6I div.Igw0E.IwRSH.eGOV_._4EzTm div.oYYFH div.pV7Qt._6Rvw2.Igw0E.IwRSH.YBx95.ybXk5._4EzTm.i0EQd div.DPiy6.Igw0E.IwRSH.eGOV_.vwCYk div.uueGX div.JiVIq._0NM_B div.Igw0E.IwRSH.eGOV_._4EzTm div.Igw0E.IwRSH.eGOV_._4EzTm.L-sTb.HcJZg div.X3a-9 div.Igw0E.IwRSH.eGOV_.vwCYk.ItkAi textarea')
    while True:
@@ -63,7 +68,7 @@ def send_jokes(time_between_jokes):
        #Send another joke after the timeout
        time.sleep(time_between_jokes)
         
- #Read user input to set a delay between jokes and obtain the username
+#Read user input to set a delay between jokes and obtain the username
 time_between_jokes = int(input("Enter the seconds of delay between each joke: "))
 username = input("Enter username: ")
 #Open the webbrowser and use it for autonomous control
