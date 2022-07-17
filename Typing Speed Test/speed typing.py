@@ -1,3 +1,7 @@
+# Code by @AmirMotefaker
+
+# Typing Speed Test
+
 import pygame
 from pygame.locals import *
 import sys
