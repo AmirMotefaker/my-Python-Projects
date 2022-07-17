@@ -13,7 +13,7 @@ from tkinter.scrolledtext import ScrolledText
 
 #the root widget
 root = Tk()
-root.title('DataFlair Notepad')
+root.title('@AmirMotefaker Notepad')
 root.resizable(0, 0)
 #creating scrollable notepad window
 notepad = ScrolledText(root, width = 90, height = 40)
@@ -120,7 +120,7 @@ editMenu.add_command(label='Time/Date', command = cmdTimeDate)
 helpMenu = Menu(notepadMenu, tearoff = False)
 notepadMenu.add_cascade(label='Help', menu = helpMenu)
 #adding options in help menu
-helpMenu.add_command(label='About Notepad', command = cmdAbout
+helpMenu.add_command(label='About Notepad', command = cmdAbout)
 
 notepad.pack()
 root.mainloop()
