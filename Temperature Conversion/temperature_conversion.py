@@ -35,4 +35,5 @@ lbl_result = tk.Label(
 lbl_celsius.grid(row=1, column=0, pady=(10, 20))
 lbl_result.grid(row=1, column=1, pady=(10, 20))
 
+window.title('Temperature Conversion by @AmirMotefaker')
 window.mainloop()
