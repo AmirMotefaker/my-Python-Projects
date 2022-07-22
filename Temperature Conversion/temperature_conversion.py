@@ -14,7 +14,7 @@ lbl_result = tk.Label(
 )
 
 
-def convert_fahrenheit_to_celsius():
+def convert_fahrenheit_to_celsius(*args):
     # user input value
     fahrenheit_input = fahrenheit_val.get()
     try:
@@ -27,9 +27,10 @@ def convert_fahrenheit_to_celsius():
             lbl_result['text'] = 'You should enter a number'
         else:
             # if user input is empty
-            lbl_result['text'] = 'Your input is empty.'
+            lbl_result['text'] = 'Your input is empty'
 
-        
+
+window.bind('<Return>', convert_fahrenheit_to_celsius)     
 
 lbl_fahrenheit = tk.Label(
     master=window,
