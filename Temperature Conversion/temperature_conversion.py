@@ -3,12 +3,13 @@
 # GUI - Temperature Conversion - (Fahrenheit to Celsius)
 
 import tkinter as tk
+from tkinter import ttk
 
 window = tk.Tk()
 
 fahrenheit_val = tk.StringVar()
 
-lbl_result = tk.Label(
+lbl_result = ttk.Label(
     master=window,
     text='Enter your number...'
 )
@@ -32,16 +33,16 @@ def convert_fahrenheit_to_celsius(*args):
 
 window.bind('<Return>', convert_fahrenheit_to_celsius)     
 
-lbl_fahrenheit = tk.Label(
+lbl_fahrenheit = ttk.Label(
     master=window,
     text='Fahrenheit: ',
 )
-ent_fahrenheit = tk.Entry(
+ent_fahrenheit = ttk.Entry(
     master=window,
     width=50,
     textvariable=fahrenheit_val,
 )
-btn_calc = tk.Button(
+btn_calc = ttk.Button(
     master=window,
     text='Calc',
     command=convert_fahrenheit_to_celsius,
@@ -51,7 +52,7 @@ lbl_fahrenheit.grid(row=0, column=0, padx=10, pady=10)
 ent_fahrenheit.grid(row=0, column=1)
 btn_calc.grid(row=0, column=2, padx=10, pady=10)
 
-lbl_celsius = tk.Label(
+lbl_celsius = ttk.Label(
     master=window,
     text='Celsius:',
 )
