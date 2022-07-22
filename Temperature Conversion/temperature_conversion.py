@@ -8,7 +8,13 @@ window = tk.Tk()
 
 fahrenheit_val = tk.StringVar()
 
-# def convert_fahrenheit_to_celsius():
+lbl_result = tk.Label(
+    master=window,
+    text='Enter your number...'
+)
+
+def convert_fahrenheit_to_celsius():
+    lbl_result['text'] = fahrenheit_val.get()
     
 
 lbl_fahrenheit = tk.Label(
@@ -23,6 +29,7 @@ ent_fahrenheit = tk.Entry(
 btn_calc = tk.Button(
     master=window,
     text='Calc',
+    command=convert_fahrenheit_to_celsius,
 )
 
 lbl_fahrenheit.grid(row=0, column=0, padx=10, pady=10)
@@ -33,10 +40,7 @@ lbl_celsius = tk.Label(
     master=window,
     text='Celsius:',
 )
-lbl_result = tk.Label(
-    master=window,
-    text='Enter your number...'
-)
+
 
 lbl_celsius.grid(row=1, column=0, pady=(10, 20))
 lbl_result.grid(row=1, column=1, pady=(10, 20))
