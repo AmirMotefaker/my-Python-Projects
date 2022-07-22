@@ -1,10 +1,15 @@
 # Code by @AmirMotefaker
 
-# Temperature Conversion
+# GUI - Temperature Conversion
 
 import tkinter as tk
 
 window = tk.Tk()
+
+fahrenheit_val = tk.StringVar()
+
+# def convert_fahrenheit_to_celsius():
+    
 
 lbl_fahrenheit = tk.Label(
     master=window,
@@ -13,6 +18,7 @@ lbl_fahrenheit = tk.Label(
 ent_fahrenheit = tk.Entry(
     master=window,
     width=50,
+    textvariable=fahrenheit_val,
 )
 btn_calc = tk.Button(
     master=window,
