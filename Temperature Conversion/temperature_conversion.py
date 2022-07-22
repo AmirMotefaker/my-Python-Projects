@@ -1,6 +1,6 @@
 # Code by @AmirMotefaker
 
-# GUI - Temperature Conversion
+# GUI - Temperature Conversion - (Fahrenheit to Celsius)
 
 import tkinter as tk
 
@@ -13,8 +13,10 @@ lbl_result = tk.Label(
     text='Enter your number...'
 )
 
+
 def convert_fahrenheit_to_celsius():
-    lbl_result['text'] = fahrenheit_val.get()
+    fahrenheit_input = float(fahrenheit_val.get())
+    lbl_result['text'] = (fahrenheit_input-32)*5/9
     
 
 lbl_fahrenheit = tk.Label(
