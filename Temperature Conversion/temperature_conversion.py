@@ -15,9 +15,21 @@ lbl_result = tk.Label(
 
 
 def convert_fahrenheit_to_celsius():
-    fahrenheit_input = float(fahrenheit_val.get())
-    lbl_result['text'] = (fahrenheit_input-32)*5/9
-    
+    # user input value
+    fahrenheit_input = fahrenheit_val.get()
+    try:
+        fahrenheit_value = float(fahrenheit_input)
+        # Convert to Celsius
+        lbl_result['text'] = (fahrenheit_value-32)*5/9
+    except ValueError:
+        if fahrenheit_input != '':
+            # if user input is not valid
+            lbl_result['text'] = 'You should enter a number'
+        else:
+            # if user input is empty
+            lbl_result['text'] = 'Your input is empty.'
+
+        
 
 lbl_fahrenheit = tk.Label(
     master=window,
