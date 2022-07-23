@@ -15,7 +15,13 @@ lbl_calc_result = tk.Label(
 lbl_calc_result.grid(row=0, column=0, columnspan=4)
 
 def insert_number_in_clac_result(btn_text):
-    lbl_calc_result['text'] = btn_text
+    current = lbl_calc_result['text']
+    if current == '0':
+        lbl_calc_result['text'] = btn_text
+    elif btn_text == '=':
+        lbl_calc_result['text'] = f"{eval(current)}"
+    else:
+        lbl_calc_result['text'] += btn_text
 
 calc_keys = [
     {
@@ -99,4 +105,3 @@ for i, calc_key_obj in enumerate(calc_keys_objs):
     calc_key_obj.grid(row=(i//4)+1, column=i%4, sticky='nsew')
 
 window.mainloop()
-
