@@ -14,70 +14,73 @@ lbl_calc_result = tk.Label(
 )
 lbl_calc_result.grid(row=0, column=0, columnspan=4)
 
+def insert_number_in_clac_result(btn_text):
+    lbl_calc_result['text'] = btn_text
+
 calc_keys = [
     {
         'text': '7',
-        'command': lambda: print('7'),
+        'command': lambda: insert_number_in_clac_result('7'),
     },
     {
         'text': '8',
-        'command': lambda: print('8'),
+        'command': lambda: insert_number_in_clac_result('8'),
     },
     {
         'text': '9',
-        'command': lambda: print('9'),
+        'command': lambda: insert_number_in_clac_result('9'),
     },
     {
         'text': '+',
-        'command': lambda: print('+'),
+        'command': lambda: insert_number_in_clac_result('+'),
     },
     {
         'text': '4',
-        'command': lambda: print('4'),
+        'command': lambda: insert_number_in_clac_result('4'),
     },
     {
         'text': '5',
-        'command': lambda: print('5'),
+        'command': lambda: insert_number_in_clac_result('5'),
     },
     {
         'text': '6',
-        'command': lambda: print('6'),
+        'command': lambda: insert_number_in_clac_result('6'),
     },
     {
         'text': '-',
-        'command': lambda: print('-'),
+        'command': lambda: insert_number_in_clac_result('-'),
     },
     {
         'text': '1',
-        'command': lambda: print('1'),
+        'command': lambda: insert_number_in_clac_result('1'),
     },
     {
         'text': '2',
-        'command': lambda: print('2'),
+        'command': lambda: insert_number_in_clac_result('2'),
     },
     {
         'text': '3',
-        'command': lambda: print('3'),
+        'command': lambda: insert_number_in_clac_result('3'),
     },
     {
         'text': '*',
-        'command': lambda: print('*'),
+        'command': lambda: insert_number_in_clac_result('*'),
     },
     {
         'text': '.',
-        'command': lambda: print('.'),
+        'command': lambda: insert_number_in_clac_result('.'),
     },
     {
         'text': '0',
-        'command': lambda: print('0'),
+        'command': lambda: insert_number_in_clac_result('0'),
     },
     {
         'text': 'C',
-        'command': lambda: print('C'),
+        'command': lambda: insert_number_in_clac_result('C'),
     },
     {
         'text': '=',
-        'command': lambda: print('='),
+        'command': lambda: insert_number_in_clac_result('='),
     },
 ]
 
@@ -93,46 +96,8 @@ for calc_key_data in calc_keys:
     )
     calc_keys_objs.append(btn)
 
-# 0,1,2,3 --> //4 = 0
-# 4,5,6,7 --> //4 = 1
-# 8,9,10,11 --> //4 = 2
-# 12,13,14,15 --> //4 = 3
 for i, calc_key_obj in enumerate(calc_keys_objs):
     calc_key_obj.grid(row=(i//4)+1, column=i%4, sticky='nsew')
-
-
-
-# btn_7 = tk.Button(
-#     master=window,
-#     text='7',
-#     command=lambda: print('7'),
-#     height=3,
-# )
-# btn_7.grid(row=1, column=0, sticky='nsew')
-
-# btn_8 = tk.Button(
-#     master=window,
-#     text='8',
-#     command=lambda: print('8'),
-#     height=3,
-# )
-# btn_8.grid(row=1, column=1, sticky='nsew')
-
-# btn_9 = tk.Button(
-#     master=window,
-#     text='9',
-#     command=lambda: print('9'),
-#     height=3,
-# )
-# btn_9.grid(row=1, column=2, sticky='nsew')
-
-# btn_plus = tk.Button(
-#     master=window,
-#     text='+',
-#     command=lambda: print('+'),
-#     height=3,
-# )
-# btn_plus.grid(row=1, column=3, sticky='nsew')
 
 window.mainloop()
 
