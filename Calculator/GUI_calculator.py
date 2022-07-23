@@ -84,7 +84,6 @@ calc_keys = [
     },
 ]
 
-
 calc_keys_objs = []
 
 for calc_key_data in calc_keys: 
