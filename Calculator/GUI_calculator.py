@@ -21,8 +21,14 @@ def insert_number_in_clac_result(btn_text):
     elif btn_text == '=':
         lbl_calc_result['text'] = f"{eval(current)}"
     else:
-        lbl_calc_result['text'] += btn_text
-
+        if btn_text == '+' or btn_text == '-' or btn_text == '*':
+           if current[-1] == '+' or current[-1] == '-' or current[-1] == '*':
+                lbl_calc_result['text'] = current[:-1] + btn_text
+           else:
+                lbl_calc_result['text'] += btn_text
+        else:
+            lbl_calc_result['text'] += btn_text
+                
 calc_keys = [
     {
         'text': '7',
@@ -105,3 +111,4 @@ for i, calc_key_obj in enumerate(calc_keys_objs):
     calc_key_obj.grid(row=(i//4)+1, column=i%4, sticky='nsew')
 
 window.mainloop()
+
