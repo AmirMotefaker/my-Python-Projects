@@ -23,21 +23,28 @@ def insert_number_in_clac_result(btn_text):
     global last_op_index, last_dot_index
     if btn_text in ['+', '-', '*']:
         last_op_index = len(current)
-    elif btn_text == '.':
-        last_dot_index = len(current)
-
-    print(last_op_index, last_dot_index)
-
+    
     if btn_text == 'C':
         lbl_calc_result['text'] = '0'
         last_op_index, last_dot_index = 0, 0
     elif current == '0':
         lbl_calc_result['text'] = btn_text
     elif btn_text == '=':
-        lbl_calc_result['text'] = f"{eval(current)}"
+        result = f"{eval(current)}"
+        lbl_calc_result['text'] = result
+        last_op_index, last_dot_index = 0, 0
+        if '.' in result:
+            # last_dot_index = len(result) - 2
+            last_dot_index = result.index('.')
     else:
-        if btn_text == '.' and current[-1] == '.':
-            pass
+        if btn_text == '.':
+            if last_dot_index > last_op_index:
+                pass
+            elif current[-1] == '.':
+                pass
+            else:
+                lbl_calc_result['text'] += btn_text
+                last_dot_index = len(current)
         elif btn_text in ['+', '-', '*']:
            if current[-1] in ['+', '-', '*']:
                 lbl_calc_result['text'] = current[:-1] + btn_text
