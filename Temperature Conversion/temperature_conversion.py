@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
 
 # GUI - Temperature Conversion - (Fahrenheit to Celsius)
 
