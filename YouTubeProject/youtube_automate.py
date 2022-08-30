@@ -1,6 +1,6 @@
-# Code by AmirMotefaker
+# Code by @AmirMotefaker
 
-# Automate youtube
+# Automate Youtube
 
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
