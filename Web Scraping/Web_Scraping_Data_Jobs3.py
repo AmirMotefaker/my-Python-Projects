@@ -45,3 +45,20 @@ def extract_location_from_result(soup):
     locations.append(span.text)
   return(locations)
 extract_location_from_result(soup)
+
+
+# Getting Salary
+def extract_salary_from_result(soup): 
+  salaries = []
+  for div in soup.find_all(name="div", attrs={"class":"row"}):
+    try:
+      salaries.append(div.find('nobr').text)
+    except:
+      try:
+        div_two = div.find(name="div", attrs={"class":"sjcl"})
+        div_three = div_two.find("div")
+        salaries.append(div_three.text.strip())
+      except:
+        salaries.append("Nothing_found")
+  return(salaries)
+extract_salary_from_result(soup)
