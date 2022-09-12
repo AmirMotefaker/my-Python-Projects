@@ -70,3 +70,7 @@ def scrape_job_details(url):
     return dataframe
 
 scrape_job_details(current_url)
+
+
+df = scrape_job_details(current_url)
+df
