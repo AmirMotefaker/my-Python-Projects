@@ -20,3 +20,28 @@ def extract_job_title_from_result(soup):
       jobs.append(a["title"])
   return(jobs)
 extract_job_title_from_result(soup)
+
+
+def extract_company_from_result(soup): 
+ companies = []
+ for div in soup.find_all(name="div", attrs={"class":"row"}):
+   company = div.find_all(name="span", attrs={"class":"company"})
+   if len(company) > 0:
+    for b in company:
+     companies.append(b.text.strip())
+   else:
+    sec_try = div.find_all(name="span", attrs={"class":"result-link-source"})
+    for span in sec_try:
+      companies.append(span.text.strip())
+ return(companies)
+ 
+extract_company_from_result(soup)
+
+# Getting Location
+def extract_location_from_result(soup): 
+  locations = []
+  spans = soup.findAll('span', attrs={'class': 'location'})
+  for span in spans:
+    locations.append(span.text)
+  return(locations)
+extract_location_from_result(soup)
