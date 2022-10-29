@@ -1,6 +1,6 @@
 # 2048 game
 
->> Explanation:
+>> xplanation:
 
  We have defined two classes in the code:
 
