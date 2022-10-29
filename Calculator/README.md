@@ -4,7 +4,7 @@
 
 >> Step-by-Step:
 
-     1- mport module
+     1- Import module
      
      2- Layout for the GUI of the calculator by using Tkinter
      
