@@ -1,4 +1,4 @@
-# Countdown Timer
+# ountdown Timer
 
 ## Prerequisites:
 
