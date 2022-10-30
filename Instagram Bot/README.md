@@ -1,4 +1,4 @@
-# Instagram Bot
+# nstagram Bot
 
 >> Step by Step:
 
