@@ -1,4 +1,4 @@
-# urrency Converter 
+# Currency Converter 
 
 >> Prerequisites:
 
