@@ -1,4 +1,4 @@
-# Password Generator
+# assword Generator
 
 ## Random Password Generator
 
