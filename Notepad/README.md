@@ -1,4 +1,4 @@
-# otepad
+# Notepad
 
 >> Step by Step:
 
