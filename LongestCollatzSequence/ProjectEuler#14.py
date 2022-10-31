@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
 
 import time
 def main():
