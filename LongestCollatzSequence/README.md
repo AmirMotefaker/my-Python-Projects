@@ -1,6 +1,6 @@
 # ProjectEuler-14
 
-Code by lukegarbutt & @AmirMotefaker
+Code by ukegarbutt & @AmirMotefaker
 
 
 projecteuler.net
