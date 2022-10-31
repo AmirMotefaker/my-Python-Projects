@@ -1,4 +1,4 @@
-# Memory Puzzle Game
+# emory Puzzle Game
 
 
 >> Step-by_step:
