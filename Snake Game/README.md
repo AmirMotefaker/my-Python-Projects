@@ -1,4 +1,4 @@
-# nake Game
+# Snake Game
 
 ## Snake Game  - Advanced
 
