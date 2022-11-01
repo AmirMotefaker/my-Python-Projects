@@ -1,4 +1,4 @@
-# elegram Bot
+# Telegram Bot
 
 >> Requirements:
 
