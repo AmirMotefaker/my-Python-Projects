@@ -1,4 +1,4 @@
-## UI - Temperature Conversion
+## GUI - Temperature Conversion
 
 >># How to Convert Temperatures from Fahrenheit to Celsius
 
