@@ -1,4 +1,4 @@
-**How To Build a YouTube Comment Bot**
+**ow To Build a YouTube Comment Bot**
 
 **Table of Contents:**
 
