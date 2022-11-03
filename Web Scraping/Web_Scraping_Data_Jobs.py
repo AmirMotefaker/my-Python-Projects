@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code by AmirMotefaker
 
 # Indeed jobs scraping with python, bs4, selenium, and pandas
 
