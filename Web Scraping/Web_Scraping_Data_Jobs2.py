@@ -1,4 +1,4 @@
-def make_indeed_url(search_job, search_location, job_age):
+ef make_indeed_url(search_job, search_location, job_age):
     job = search_job.replace(' ', '%20')
     location = search_location.replace(',', '%2C').replace(' ', '%20')
     indeed_job_url = f'https://www.indeed.com/jobs?q={job}&l={location}&fromage={job_age}'
