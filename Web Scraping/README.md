@@ -21,3 +21,8 @@
 - More than a modern convenience, the true power of data web scraping lies in its ability to build and power some of the world’s most revolutionary business applications.
 
 - ‘Transformative’ doesn’t even begin to describe the way some companies use web scraped data to enhance their operations, informing executive decisions all the way down to individual customer service experiences.
+
+
+
+### Why is Python a popular programming language for Web Scraping?
+- Python seems to be in fashion these days! It is the most popular language for web scraping as it can handle most of the processes easily. It also has a variety of libraries that were created specifically for Web Scraping. Scrapy is a very popular open-source web crawling framework that is written in Python. It is ideal for web scraping as well as extracting data using APIs. Beautiful soup is another Python library that is highly suitable for Web Scraping. It creates a parse tree that can be used to extract data from HTML on a website. Beautiful soup also has multiple features for navigation, searching, and modifying these parse trees.
