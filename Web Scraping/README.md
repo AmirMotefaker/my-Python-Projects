@@ -1,4 +1,4 @@
-## Web Scraping “Data” Jobs with Python
+## Web Scraping 
 
 ### What is web scraping?
 - Web scraping is the process of collecting structured web data in an automated fashion. It’s also known as web data extraction.
@@ -12,3 +12,12 @@
 - Whether you’re using a web scraper to get web data or outsourcing the web scraping project to a web data extraction specialist, you’ll need to know a bit more about the differences between web crawling and web scraping.
 
 - Just as importantly, you’ll need to understand the possible pitfalls of extraction and how to avoid them.
+
+
+
+T### he value of scraping data
+- Web scraping provides something really valuable that nothing else can: it gives you structured web data from any public website.
+
+- More than a modern convenience, the true power of data web scraping lies in its ability to build and power some of the world’s most revolutionary business applications.
+
+- ‘Transformative’ doesn’t even begin to describe the way some companies use web scraped data to enhance their operations, informing executive decisions all the way down to individual customer service experiences.
