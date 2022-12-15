@@ -15,7 +15,7 @@
 
 
 
-T### he value of scraping data
+### The value of scraping data
 - Web scraping provides something really valuable that nothing else can: it gives you structured web data from any public website.
 
 - More than a modern convenience, the true power of data web scraping lies in its ability to build and power some of the world’s most revolutionary business applications.
