@@ -1,4 +1,4 @@
-# Code by @mirMotefaker
+# Code by @AmirMotefaker
 
 # Chess Game - Basic
 # pip install chess
