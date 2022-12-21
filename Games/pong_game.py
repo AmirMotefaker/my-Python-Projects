@@ -1,4 +1,4 @@
-# Code by @ArMotefaker
+# Code by @AmirMotefaker
 
 # Pong game (using Turtle)
 
