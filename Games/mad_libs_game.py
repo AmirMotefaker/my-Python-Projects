@@ -1,4 +1,4 @@
-# Code by @AmirMotefaker
+# Code by irMotefaker
 
 # Mad Libs Game
 
