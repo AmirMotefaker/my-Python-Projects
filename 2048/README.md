@@ -1,5 +1,5 @@
 # 2048 game
-# code by 
+### code by @AmirMotefaker
 
 >> Explanation:
 
