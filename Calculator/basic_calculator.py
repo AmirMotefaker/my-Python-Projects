@@ -1,4 +1,4 @@
-# Code by @irMotefaker
+# Code by @AmirMotefaker
 
 # Basic Calculator
 
