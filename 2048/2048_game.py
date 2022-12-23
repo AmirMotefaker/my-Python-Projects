@@ -1,4 +1,4 @@
-# Code by @irMotefaker
+# Code by @AirMotefaker
 
 # 2048 Game
 
