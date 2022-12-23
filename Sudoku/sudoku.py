@@ -1,4 +1,4 @@
-# Code byirMotefaker
+# Code by @irMotefaker
 
 # Sudoku solver with Backtracking
 
