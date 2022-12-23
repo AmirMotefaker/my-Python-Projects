@@ -1,4 +1,4 @@
-# Code by @AmirMoefaker
+# Code by @AmirMotefaker
 
 # Scientific Calculator
 
